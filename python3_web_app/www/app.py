@@ -1,4 +1,3 @@
-
 import logging; logging.basicConfig(level=logging.INFO)
 
 import asyncio
@@ -16,6 +15,8 @@ def init(loop):
     logging.info('server started at http://127.0.0.1:9000...')
     return srv
 
+
 loop = asyncio.get_event_loop()
 loop.run_until_complete(init(loop))
 loop.run_forever()
+
